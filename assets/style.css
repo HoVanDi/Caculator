@@ -1,0 +1,89 @@
+body {
+    background: #F0F0F0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 840px;
+    height: 623px;
+    border-radius: 24px 24px 176px 24px;
+    background: #fff;
+}
+
+.container .caculater {
+    padding: 54px 56px 70px;
+}
+
+.container .form {
+    gap: 16px;
+    display: flex;
+
+}
+
+.container .caculater .circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 9999px;
+    background: #854DFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .caculater .line {
+    display: flex;
+    align-items: center;
+}
+
+.container .form .form-group .form-group-label {
+    color: #716F6F;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin-bottom: 10px;
+}
+
+
+input.form-control {
+    max-width: 146px;
+    padding: 25px 0 25px 12px;
+    color: #716F6F;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    border-radius: 8px;
+    border: 1px solid #DBDBDB;
+}
+
+hr {
+    border-color: #DBDBDB;
+    width: 632px;
+    margin: 0px;
+}
+
+.container .caculater .result {
+    display: flex;
+    gap: 19px;
+    display: flex;
+}
+
+.container .caculater .result .dash{
+    color: #854DFF;
+font-size: 96px;
+line-height: 105.6px;
+}
+
+.container .caculater .result .lable-results{
+    font-family: Poppins;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 105.6px;
+}
+
+
