@@ -1,89 +1,156 @@
 body {
-    background: #F0F0F0;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  background: #f0f0f0;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    width: 840px;
-    height: 623px;
-    border-radius: 24px 24px 176px 24px;
-    background: #fff;
+  width: 840px;
+  border-radius: 24px 24px 176px 24px;
+  background: #fff;
 }
 
 .container .caculater {
-    padding: 54px 56px 70px;
+  padding: 56px 56px 70px;
 }
 
 .container .form {
-    gap: 16px;
-    display: flex;
-
+  gap: 16px;
+  display: flex;
 }
 
 .container .caculater .circle {
-    width: 96px;
-    height: 96px;
-    border-radius: 9999px;
-    background: #854DFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  border-radius: 9999px;
+  background: #854dff;
+  display: flex;
+  align-items: center;
+  right: 0px;
 }
 
+.container .caculater .circle:hover {
+background: #000;
+  }
+  
+
 .container .caculater .line {
-    display: flex;
-    align-items: center;
+  display: flex;
+  position: relative;
 }
 
 .container .form .form-group .form-group-label {
-    color: #716F6F;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2.1px;
-    margin-bottom: 10px;
+  color: #716f6f;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+  margin-bottom: 10px;
 }
 
-
 input.form-control {
-    max-width: 146px;
-    padding: 25px 0 25px 12px;
-    color: #716F6F;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 2.1px;
-    border-radius: 8px;
-    border: 1px solid #DBDBDB;
+  max-width: 143px;
+  padding: 22px 8px 21px 7px;
+  color: #716f6f;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+  border-radius: 8px;
+  border: 1px solid #dbdbdb;
+  outline: none;
+}
+
+input.form-control:focus{
+    border-color: #854DFF;
 }
 
 hr {
-    border-color: #DBDBDB;
-    width: 632px;
-    margin: 0px;
+  border-color: #dbdbdb;
+  width: 100%;
+  margin: 48px 0 33px;
+}
+
+.container .caculater .line img.circle-image {
+  padding: 26px 25px;
 }
 
 .container .caculater .result {
-    display: flex;
-    gap: 19px;
-    display: flex;
+  display: flex;
+  gap: 19px;
+  display: flex;
 }
 
-.container .caculater .result .dash{
-    color: #854DFF;
-font-size: 96px;
-line-height: 105.6px;
+.container .caculater .result .dash {
+  color: #854dff;
+  font-size: 96px;
+  line-height: 105.6px;
+  font-family: "Poppins";
 }
 
-.container .caculater .result .lable-results{
-    font-family: Poppins;
-    font-size: 96px;
+.container .caculater .result .lable-results {
+  font-family: Poppins;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 106.6px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    border-radius: 24px 24px 88px 24px;
+    width: auto;
+    margin: 164px 16px 163px;
+  }
+
+  .container .caculater {
+    padding: 52px 24px 51px;
+  }
+
+  .container .form .form-group .form-group-label {
     font-weight: 700;
-    line-height: 105.6px;
+    letter-spacing: 2.1px;
+    margin-bottom: 4px;
+  }
+
+  input.form-control {
+    max-width: 72px;
+    font-size: 20px;
+    padding: 11px 11px 11px 11px;
+  }
+
+  .container .form {
+    margin-bottom: 32px;
+  }
+
+  .container .caculater .line {
+    margin-bottom: 23px;
+  }
+
+  hr{
+    margin: 32px 0 31px;
+  }
+
+  .container .caculater .line img.circle-image {
+    padding: 10px 9px;
+  }
+
+  .container .caculater .result .dash {
+    font-size: 52px;
+    line-height: 57.2px;
+  }
+
+  .container .caculater .result{
+    gap: 10px;
+  }
+
+  .container .caculater .result .lable-results {
+    line-height: 57.2px;
+    font-size: 52px;
+  }
 }
-
-
