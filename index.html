@@ -20,7 +20,7 @@
           <div class="form-group">
             <div class="form-group-label">DAY</div>
             <input
-              type="text"
+              type="number"
               id="day-input"
               class="form-control"
               placeholder="DD"
@@ -29,7 +29,7 @@
           <div class="form-group">
             <div class="form-group-label">MONTH</div>
             <input
-              type="text"
+              type="number"
               id="month-input"
               class="form-control"
               placeholder="MM"
@@ -38,7 +38,7 @@
           <div class="form-group">
             <div class="form-group-label">YEAR</div>
             <input
-              type="text"
+              type="number"
               id="year-input"
               class="form-control"
               placeholder="YYYY"
@@ -48,21 +48,21 @@
         <div class="line">
           <hr />
           <div class="circle">
-            <img class="circle-image" src="./assets/images/Frame.svg" alt="" />
+            <img class="circle-image" src="./assets/images/Frame.svg" alt="" onclick="calculateAge()" />
           </div>
         </div>
   
         <div class="result">
-          <div id="years-result" class="dash">--</div>
-          <div class="lable-results">years</div>
-        </div>
-        <div class="result">
-          <div id="months-result" class="dash">--</div>
-          <div class="lable-results">months</div>
-        </div>
-        <div class="result">
-          <div id="days-result" class="dash">--</div>
-          <div class="lable-results">days</div>
+            <div>
+                <div id="years-result" class="dash">--</div>
+                <div id="months-result" class="dash">--</div>
+                <div id="days-result" class="dash">--</div>
+            </div>
+            <div>
+                <div class="lable-results">years</div>
+                <div class="lable-results">months</div>
+                <div class="lable-results">days</div>
+            </div>
         </div>
       </div>
     </div>
