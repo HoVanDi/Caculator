@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-font-family: "Poppins", sans-serif;
+font-family: Poppins;
   width: 840px;
   border-radius: 24px 24px 176px 24px;
   background: #fff;
@@ -57,14 +57,18 @@ background: #000;
 
 
 input.form-control {
-  padding: 25px 8px 25px 7px;
+  padding: 17px 0px 17px 15px;
   color: #716f6f;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 2.1px;
   border-radius: 8px;
   border: 1px solid #dbdbdb;
   outline: none;
+}
+
+input.form-control::placeholder {
+  font-size: 16px;
 }
 
 input.form-control:focus{
