@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-font-family: Poppins;
+  font-family: Poppins;
   width: 840px;
   border-radius: 24px 24px 176px 24px;
   background: #fff;
@@ -33,9 +33,9 @@ font-family: Poppins;
 }
 
 .container .caculater .circle:hover {
-background: #000;
-  }
-  
+  background: #000;
+}
+
 
 .container .caculater .line {
   display: flex;
@@ -51,15 +51,15 @@ background: #000;
   line-height: 20px;
 }
 
-    input[type="number"] {
-        width: 143px;
-    }
+input[type="number"] {
+  width: 143px;
+}
 
 
 input.form-control {
-  padding: 17px 0px 17px 15px;
+  padding: 23px 0px 23px 15px;
   color: #716f6f;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 2.1px;
   border-radius: 8px;
@@ -67,18 +67,18 @@ input.form-control {
   outline: none;
 }
 
-input.form-control::placeholder {
-  font-size: 16px;
-}
 
-input.form-control:focus{
-    border-color: #854DFF;
+
+input.form-control:focus {
+  border-color: #854DFF;
 }
 
 hr {
   border-color: #dbdbdb;
   width: 100%;
   margin: 48px 0 33px;
+  border-style: solid;
+  border-bottom: 1px #dbdbdb;
 }
 
 .container .caculater .line img.circle-image {
@@ -86,11 +86,10 @@ hr {
 }
 
 .container .caculater .line img.circle-image:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
 
 .container .caculater .result {
-  display: flex;
   gap: 19px;
   display: flex;
 }
@@ -132,7 +131,7 @@ hr {
   input.form-control {
     max-width: 72px;
     font-size: 20px;
-    padding: 15px 11px 14px; 
+    padding: 15px 11px 14px;
   }
 
   .container .form {
@@ -143,7 +142,7 @@ hr {
     margin-bottom: 23px;
   }
 
-  hr{
+  hr {
     margin: 32px 0 31px;
   }
 
@@ -156,7 +155,7 @@ hr {
     line-height: 57.2px;
   }
 
-  .container .caculater .result{
+  .container .caculater .result {
     gap: 10px;
   }
 

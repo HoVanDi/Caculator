@@ -1,70 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="caculater">
-        <div class="form">
-          <div class="form-group">
-            <div class="form-group-label">DAY</div>
-            <input
-              type="number"
-              id="day-input"
-              class="form-control"
-              placeholder="DD"
-            />
-          </div>
-          <div class="form-group">
-            <div class="form-group-label">MONTH</div>
-            <input
-              type="number"
-              id="month-input"
-              class="form-control"
-              placeholder="MM"
-            />
-          </div>
-          <div class="form-group">
-            <div class="form-group-label">YEAR</div>
-            <input
-              type="number"
-              id="year-input"
-              class="form-control"
-              placeholder="YYYY"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="caculater">
+      <div class="form">
+        <div class="form-group">
+          <div class="form-group-label">DAY</div>
+          <input type="number" id="day-input" class="form-control" placeholder="DD" />
         </div>
-        <div class="line">
-          <hr />
-          <div class="circle">
-            <img class="circle-image" src="./assets/image/btn.svg" alt="" onclick="calculateAge()" />
-          </div>
+        <div class="form-group">
+          <div class="form-group-label">MONTH</div>
+          <input type="number" id="month-input" class="form-control" placeholder="MM" />
         </div>
-  
-        <div class="result">
-              <div>
-                  <div id="years-result" class="dash">--</div>
-                  <div id="months-result" class="dash">--</div>
-                  <div id="days-result" class="dash">--</div>
-              </div>
-            <div>
-                <div class="lable-results">years</div>
-                <div class="lable-results">months</div>
-                <div class="lable-results">days</div>
-            </div>
+        <div class="form-group">
+          <div class="form-group-label">YEAR</div>
+          <input type="number" id="year-input" class="form-control" placeholder="YYYY" />
+        </div>
+      </div>
+      <div class="line">
+        <hr />
+        <div class="circle">
+          <img class="circle-image" src="./assets/image/btn.svg" alt="" onclick="calculateAge()" />
+        </div>
+      </div>
+
+      <div class="result">
+        <div>
+          <div id="years-result" class="dash">--</div>
+          <div id="months-result" class="dash">--</div>
+          <div id="days-result" class="dash">--</div>
+        </div>
+        <div>
+          <div class="lable-results">years</div>
+          <div class="lable-results">months</div>
+          <div class="lable-results">days</div>
         </div>
       </div>
     </div>
+  </div>
   <script src="./assets/javascript.js"></script>
-  </body>
+</body>
+
 </html>
